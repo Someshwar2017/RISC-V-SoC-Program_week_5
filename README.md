@@ -13,6 +13,7 @@ The main objective of OpenROAD is to make chip design more accessible by reducin
  <li>Development risks</li></ul></p>
 This tool provides a robust set of methodologies for system and hardware designers to efficiently build silicon chips, even at advanced technology nodes.
 
+#
 ### ⚙️ Installation Steps
 1. Clone the Repository
 
@@ -20,6 +21,7 @@ Use the following command to clone the OpenROAD Flow Scripts repository:
 ```bash
 git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
 ```
+#
 2. Install Dependencies
 
 Navigate to the cloned directory and run the setup script:
@@ -29,7 +31,7 @@ cd OpenROAD-flow-scripts
 sudo ./setup.sh
 ```
 This command installs all required dependencies for the OpenROAD build.
-
+#
 3. Build OpenROAD
 
 Once the setup is complete, build OpenROAD using:
@@ -37,7 +39,7 @@ Once the setup is complete, build OpenROAD using:
 ./build_openroad.sh --local --threads 1 --openroad-args "-DENABLE_TESTS=OFF"
 ```
 🔧 This build command helps avoid common build errors by disabling unnecessary test modules and also ensures a smoother and more stable build.
-
+##
 4. Verify Installation
 
 Once the installation finishes successfully, verify the setup with:
@@ -47,7 +49,7 @@ yosys -help
 openroad -help
 ```
 If both commands show help messages, it confirms that Yosys and OpenROAD are installed properly.
-
+##
 5. Run the OpenROAD Flow
 
 Move into the flow directory and execute:
@@ -56,7 +58,7 @@ cd flow
 make
 ```
 This initiates the OpenROAD design flow.
-
+##
 6. Launch the GUI
 
 To open the graphical interface:
@@ -64,3 +66,8 @@ To open the graphical interface:
 make gui_final
 ```
 When the GUI window launches successfully, it confirms that OpenROAD is fully functional.
+#
+### ✅ Conclusion
+
+You’ve now installed and verified OpenROAD successfully! 🎉<br>
+You can start exploring the complete RTL-to-GDSII flow, perform experiments, or integrate OpenROAD into your design automation projects.
